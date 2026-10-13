@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>CodeClass IDE</title>
+<style>
+:root{--b:#2ba8e0;--tx:#e8eef5;--bg:#121a24;--ln:#2d3b4c}
+html,body{margin:0;height:100%;background:var(--bg);font-family:Montserrat,system-ui,sans-serif;color:var(--tx)}
+header{padding:12px 14px;border-bottom:1px solid var(--ln)}
+.logo{font-weight:800;font-size:20px;color:var(--b)}.logo b{color:var(--tx)}
+</style></head><body>
+<header><span class="logo">CODE<b>CLASS</b></span></header>
+<!-- Paste your WIDGET key (created on the Widgets page) in data-key -->
+<div id="ide" class="runcode" data-key="PASTE_WIDGET_KEY_HERE" data-lang="python-3.14" data-theme="dark"></div>
+<script>
+// Fill the screen below the header
+document.getElementById("ide").dataset.height = Math.max(300, innerHeight - 60);
+</script>
+<script src="https://onlinecompiler.io/widget.js"></script>
+</body></html>
